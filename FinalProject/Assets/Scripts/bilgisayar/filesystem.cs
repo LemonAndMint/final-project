@@ -1,24 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
 
-public class filesystem : MonoBehaviour
+public class filesystem
 {
 	//file dosyalar, folder klasörlerdir.
+	//en üstteki kök klasörü oluşturulur.
 	public folder root = new folder();
 
 	//destination, oluşturulacak klasörün konumu mesela
 	//0,0,1,0
 	//bu da root listesinde bulunan listelerde gezinmemiz anlamına geliyor.
-	//DENEME
-	private void Start()
-	{
-		int[] destination = { 0 };
-		createFolder(destination, "deneme");
-		Debug.Log(root.slot[0].fname);
-	}
-	//DENEME
 	public void createFolder(int[] destination, string name) 
 	{
 		folder tempFold;

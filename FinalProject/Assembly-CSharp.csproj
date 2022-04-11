@@ -54,9 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\masaüstüSimgeleri\simge.cs" />
-    <Compile Include="Assets\Scripts\bilgisayar\bilgisayar.cs" />
     <Compile Include="Assets\Scripts\bilgisayar\filesystem.cs" />
+    <Compile Include="Assets\Scripts\bilgisayar\bilgisayar.cs" />
     <Compile Include="Assets\Scripts\bilgisayar\file.cs" />
+    <Compile Include="Assets\Scripts\bilgisayar\shell.cs" />
+    <Compile Include="Assets\Scripts\bilgisayar\getInputFromShell.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
