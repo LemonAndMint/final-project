@@ -215,7 +215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 197956104}
   - component: {fileID: 197956105}
-  - component: {fileID: 197956106}
   m_Layer: 0
   m_Name: Bilgisayar
   m_TagString: Untagged
@@ -247,18 +246,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72da5736026380e4ab2da4272a77c43b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &197956106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197956103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211e2ac4ec9cd774684a9047c0845147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &209024962
@@ -1047,7 +1034,6 @@ GameObject:
   - component: {fileID: 1163962164}
   - component: {fileID: 1163962163}
   - component: {fileID: 1163962162}
-  - component: {fileID: 1163962166}
   - component: {fileID: 1163962165}
   m_Layer: 5
   m_Name: InputField
@@ -1190,18 +1176,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b970811d3cba10e4a84844340c6f465f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1163962166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163962160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51cfd51047a973545bed95074d252a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1196005553
