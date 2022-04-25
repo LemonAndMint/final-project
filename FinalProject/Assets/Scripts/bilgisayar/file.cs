@@ -38,3 +38,22 @@ public class file : data
     this.fdesc = "A file";
   }
 }
+
+public class TextFile : file
+{
+  private string text; // yazı dosyasının içindeki yazı
+  private string extension; // .xxx olan kısım buraya yazılacak
+  
+  public TextFile(string fname, string fdesc) : base(fname, fdesc) 
+  {
+    findExtension(fname);
+  }
+
+  private void findExtension(string name){
+    extension = name.Split('.')[1]; // abc.xxx olan bir dosya isminde xxx kısmını alır.
+  }
+  public TextFile(string fname) : base(fname)
+  {
+    this.fdesc = "A Text file";  
+  }
+}

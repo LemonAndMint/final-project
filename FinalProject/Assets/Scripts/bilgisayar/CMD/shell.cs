@@ -14,8 +14,8 @@ public class shell
 		parsdCmd = command.Split(' ');
 	}
 	
-	private void setch()
+	/*private void ()
 	{
-
-	}
+	//#TODO
+	}*/
 }
