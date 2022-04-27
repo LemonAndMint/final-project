@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class data
+public class data : MonoBehaviour
 {
   public string fname;
   public string fdesc;
@@ -39,21 +40,21 @@ public class file : data
   }
 }
 
-public class TextFile : file
+public class WebPage : file
 {
-  private string text; // yazı dosyasının içindeki yazı
-  private string extension; // .xxx olan kısım buraya yazılacak
-  
-  public TextFile(string fname, string fdesc) : base(fname, fdesc) 
+  //private string text; // yazı dosyasının içindeki yazı
+  //private string extension; // .xxx olan kısım buraya yazılacak
+  private GameObject page; 
+  public WebPage(string fname, string fdesc) : base(fname, fdesc) 
   {
-    findExtension(fname);
+    //findExtension(fname);
   }
 
-  private void findExtension(string name){
+  /*private void findExtension(string name){
     extension = name.Split('.')[1]; // abc.xxx olan bir dosya isminde xxx kısmını alır.
-  }
-  public TextFile(string fname) : base(fname)
+  }*/
+  public WebPage(string fname) : base(fname)
   {
-    this.fdesc = "A Text file";  
+    this.fdesc = "A Page";  
   }
 }
