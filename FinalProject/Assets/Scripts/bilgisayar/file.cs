@@ -40,12 +40,12 @@ public class file : data
   }
 }
 
-public class WebPage : file
+public class WebFile: file
 {
   //private string text; // yazı dosyasının içindeki yazı
   //private string extension; // .xxx olan kısım buraya yazılacak
-  private GameObject page; 
-  public WebPage(string fname, string fdesc) : base(fname, fdesc) 
+  private Page page; 
+  public WebFile(string fname, string fdesc) : base(fname, fdesc) 
   {
     //findExtension(fname);
   }
@@ -53,8 +53,13 @@ public class WebPage : file
   /*private void findExtension(string name){
     extension = name.Split('.')[1]; // abc.xxx olan bir dosya isminde xxx kısmını alır.
   }*/
-  public WebPage(string fname) : base(fname)
+  public WebFile(string fname) : base(fname)
   {
     this.fdesc = "A Page";  
+  }
+  public WebFile(string fname, Page page) : base(fname) 
+  {
+    this.fdesc = "A Page";  
+    this.page = page;
   }
 }

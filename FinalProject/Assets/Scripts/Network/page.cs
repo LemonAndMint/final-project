@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "page")]
-public class page : ScriptableObject
+public class Page : ScriptableObject
 {
   public GameObject layout;
 }

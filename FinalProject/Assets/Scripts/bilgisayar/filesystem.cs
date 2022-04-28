@@ -34,6 +34,19 @@ public class filesystem
 		tempFold.slot.Add(newFile);
 	}
 
+  public WebFile createWebFile(int[] destination, string name, Page page) //#TODO argümentleri array olarak alıp farklı yapıcılarda çalıştırma
+	{
+		folder tempFold;
+		//dosya sisteminde istenilen konumdaki klasöre erişilir.
+		tempFold = travel(destination);
+		//yeni dosya oluşturma kısmı
+		WebFile newFile = new WebFile(name, page);
+		//bulunduğumuz klasörün sonuna yeni oluşturulan dosyayı ekler.
+		tempFold.slot.Add(newFile);
+    return newFile;
+	}
+
+
 	folder travel(int[] destination)
 	{
 		folder tempFold;
@@ -53,4 +66,8 @@ public class filesystem
 		}
 		return tempFold;
 	}
+
+  /*file search(string name){
+    #TODO 
+  }*/
 }
