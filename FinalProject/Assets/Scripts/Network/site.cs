@@ -8,6 +8,7 @@ public class site
   int capasity;
   int maxSupportedBandwith;
   filesystem sitemap;
+  public filesystem getsiteMap(){ return sitemap; }
   WebFile homePage;
 
   public site(){

@@ -45,6 +45,7 @@ public class WebFile: file
   //private string text; // yazı dosyasının içindeki yazı
   //private string extension; // .xxx olan kısım buraya yazılacak
   private Page page; 
+  public Page getpage(){ return page; }
   public WebFile(string fname, string fdesc) : base(fname, fdesc) 
   {
     //findExtension(fname);
